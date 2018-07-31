@@ -8,5 +8,6 @@ set wrap "Automatically wrap text that scrolls beyond screen length
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
