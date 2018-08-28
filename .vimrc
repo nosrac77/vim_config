@@ -10,5 +10,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 Plug 'alfredodeza/pytest.vim'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
