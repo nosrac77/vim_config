@@ -1,4 +1,4 @@
-"""Module to backup Tiny House Home Assistant configuration files to Github."""
+"""Module to backup my .vimrc file to Github."""
 
 from subprocess import call
 import os
