@@ -6,6 +6,7 @@ set autowrite "Auto save before commands like :next and :make
 set wrap "Automatically wrap text that scrolls beyond screen length
 set laststatus=2
 
+" Setting termguicolors for OneDark Theme
 if (empty($TMUX))
   if (has("termguicolors"))
     set termguicolors
@@ -22,9 +23,11 @@ Plug 'joshdick/onedark.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdcommenter'
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 call plug#end()
 
+" Configuring OneDark Theme
 syntax on
 let g:airline_theme='onedark'
 let g:onedark_terminal_italics=1
@@ -48,3 +51,6 @@ if (has("autocmd"))
 endif
 
 colorscheme onedark
+
+" Configuring vim-markdown-preview Plugin
+let vim_markdown_preview_github=1 " Sets the markdown flavor to Github's
