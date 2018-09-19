@@ -7,10 +7,10 @@ import sys
 
 def run_acp_vimrc_file(branch_name):
     """Function responsible for updating Github .vimrc file."""
-    
+
     original_vimrc = os.environ.get('ORIGINAL_VIMRC', 'Not Set')
     project_dir = os.environ.get('PROJECT_DIR', 'Not Set')
-    
+
     call(['sudo', 'rm', project_dir + '/vimrc'])
     call(['sudo', 'cp', original_vimrc, project_dir])
     call(['sudo', 'mv', project_dir + '/.vimrc', project_dir + '/vimrc'])
